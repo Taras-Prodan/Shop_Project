@@ -37,14 +37,14 @@ body {
 .menu {
   display: flex;
 }
-.menu li {
+.menu .flex-menu {
   width: 25%;
   border-left: 1px solid #2c71b8;
 }
-.menu li:last-child {
+.menu:last-child {
   border-right: 1px solid #2c71b8;
 }
-.menu a {
+.menu .menu-a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@ body {
   font-weight: 300;
   text-decoration: none;
 }
-.menu a:hover {
+.menu .menu-a:hover {
   background-color: #2c71b8;
   color: white;
 }
@@ -104,4 +104,27 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 0;
+}
+.dropdown-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  background-color: #2c71b8;
+  left: -1px;
+  width: 286px;
+  height: 315px;
+  padding: 30px 0;
+}
+.relative {
+  position: relative;
+}
+.sub-menu-item {
+  width: 100%;
+  padding: 10px 40px;
+}
+.sub-menu-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
 }
