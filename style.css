@@ -128,3 +128,15 @@ body {
   text-decoration: none;
   font-weight: 300;
 }
+.sub-menu-item:hover {
+  background-color: white;
+}
+.sub-menu-item:hover a {
+  color: #2c71b8;
+}
+.dropdown-header {
+  visibility: hidden;
+}
+.flex-menu:hover .dropdown-header {
+  visibility: visible;
+}
