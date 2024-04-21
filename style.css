@@ -4,6 +4,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-image: url(Demo_Shop/patt.png);
+  position: relative;
 }
 .container {
   width: 1200px;
@@ -159,4 +160,25 @@ body {
 .cart-button:hover {
   background-color: #2c71b8;
   background-image: url(Demo_Shop/cart-white.png);
+}
+.slide {
+  border: 1px solid white;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.h1-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 200;
+}
+
+.main-menu-value {
+  position: absolute;
+  left: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 270px;
+  height: 845px;
+  border-right: 1px solid white;
 }
