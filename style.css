@@ -182,11 +182,26 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   height: 845px;
 }
-.title {
+.breadcrumbs-list {
+  list-style: none;
+  padding: 30px 0 25px 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumbs-list a {
+  text-decoration: none;
   color: white;
-  font-weight: lighter;
-  padding: 30px 0;
-  color: #b8c4d1;
+}
+
+.breadcrumbs-list li:not(:last-child)::after {
+  content: ">";
+  margin: 0 5px;
+  color: white;
+}
+
+.breadcrumbs-list li:last-child a {
+  text-decoration: underline;
 }
 .title-name {
   display: flex;
@@ -200,9 +215,30 @@ body {
   color: white;
   font-weight: 300;
   background-color: #2c71b8;
-  display: flex;
-  align-items: center;
   padding: 0 20px;
+  position: relative;
+  line-height: 40px;
+}
+.title-menu a {
+  text-decoration: none;
+  color: white;
+}
+.dropdown-menu-sort {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  left: -1px;
+  width: 270px;
+  height: 122px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 300;
+  background-color: #2c71b8;
+  padding: 0 20px;
+  visibility: hidden;
+}
+.title-menu:hover .dropdown-menu-sort {
+  visibility: visible;
 }
 .title-laptops {
   font-size: 45px;
