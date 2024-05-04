@@ -28,6 +28,76 @@ body {
   flex: 0 0 25%;
   max-width: 25%;
 }
+.main-filter {
+  padding: 30px;
+}
+.filter-name {
+  padding: 0 0 10px 0;
+  font-size: 21;
+  color: white;
+  font-weight: bolder;
+}
+.filter-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 21;
+  color: white;
+  font-weight: 100;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked + label::before {
+  background-color: white;
+}
+.first-filter {
+  padding: 0 0 30px 0;
+}
+.second-filter {
+  padding: 0 0 30px 0;
+}
+.footer-filter {
+  padding: 30px 0;
+}
+.list-style-footer-filter {
+  padding: 0 0 30px 0;
+}
+.more-info-footer {
+  color: white;
+  text-decoration: none;
+  font-size: 21;
+  font-weight: 100;
+}
+.btn-filter-footer {
+  border: 1px solid white;
+  width: 210px;
+  height: 50px;
+  background-color: #2c71b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.list-style-footer-filter {
+  list-style: none;
+}
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -124,14 +194,10 @@ body {
   background-color: #2c71b8;
   left: -1px;
   width: 285px;
-  height: 330px;
-  padding: 30px 0;
 }
-
 .relative {
   position: relative;
 }
-
 .sub-menu-item a {
   color: white;
   text-decoration: none;
