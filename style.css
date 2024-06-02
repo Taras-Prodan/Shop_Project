@@ -251,6 +251,16 @@ input[type="checkbox"]:checked + label::before {
   border-bottom: 1px solid white;
   height: 400px;
   background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+}
+.container-slide {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 .main-filter {
   border-right: 1px solid white;
@@ -491,4 +501,31 @@ span {
 .zoom-button:hover {
   background-color: #2c71b8;
   background-image: url(Demo_Shop/zoom-white.png);
+}
+.load-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: lighter;
+}
+.load-item-footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer {
+  margin-top: 90px;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  font-weight: lighter;
+}
+.footer a {
+  text-decoration: none;
+  color: #2c71b8;
 }
