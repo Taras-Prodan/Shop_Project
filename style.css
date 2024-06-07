@@ -478,15 +478,21 @@ span {
 .heart-button {
   width: 30px;
   height: 30px;
-  background-image: url(Demo_Shop/blue-heart.png);
+  background-image: url("Demo_Shop/blue-heart.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #2c71b8;
   cursor: pointer;
 }
+
 .heart-button:hover {
   background-color: #2c71b8;
-  background-image: url(Demo_Shop/white-heart.png);
+  background-image: url("Demo_Shop/white-heart.png");
+}
+
+.heart-button.active {
+  background-color: #2c71b8;
+  background-image: url("Demo_Shop/white-heart.png");
 }
 .zoom-button {
   width: 30px;

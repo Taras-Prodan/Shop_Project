@@ -11,53 +11,18 @@ addCartBtns.forEach((btn) =>
     })
 );
 
+const heartButtons = document.querySelectorAll('.heart-button');
 
-// const heartButtons = document.querySelectorAll(".heart-button");
-// const imageEl = document.querySelector("img");
+function toggleHeartButton(e) {
+    const btn = e.currentTarget;
 
-// function changeImg(e){
-//     const imgSrc = imageEl.getAttribute("src");
-//     if(imgSrc === "Demo_shop/blue-heart.png"){
-//         imageEl.setAttribute("src", "Demo_shop/white-heart.png")
-//         imageEl.style.backgroundColor = "#2c71b8";
-//     }else{
-//         imageEl.setAttribute("src", "Demo_shop/blue-heart.png")
-//     }
-// }
+    if (btn.classList.contains('active')) {
+        btn.classList.remove('active');
+    } else {
 
-// heartButtons.forEach((btn)=>
-//     btn.addEventListener("click", changeImg)
-// )
-
-
-// console.log(heartButtons);
-// console.log(imageEl);
-
-const heartButtons = document.querySelectorAll(".heart-button");
-
-// Вибір всіх зображень з класом 'heart-image'
-const imageEls = document.querySelectorAll(".heart-image");
-
-function changeImg(e){
-    // Визначаємо, на яке зображення впливає конкретна кнопка
-    const btn = e.currentTarget.location;
-    const img = btn;
-
-    if (!img) return; // Якщо не знайдено зображення, нічого не робити
-
-    const imgSrc = img.getAttribute("src");
-    if(imgSrc === "Demo_shop/blue-heart.png"){
-        img.setAttribute("src", "Demo_shop/white-heart.png");
-        img.style.backgroundColor = "#2c71b8";
-    }else{
-        img.setAttribute("src", "Demo_shop/blue-heart.png");
-        img.style.backgroundColor = ""; // Знімаємо фон, якщо зображення не біле
+        btn.classList.add('active');
     }
 }
-
-heartButtons.forEach((btn) => {
-    btn.addEventListener("click", changeImg);
+heartButtons.forEach(btn => {
+    btn.addEventListener('click', toggleHeartButton);
 });
-
-console.log(heartButtons);
-console.log(imageEls);
